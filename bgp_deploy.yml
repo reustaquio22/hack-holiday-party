@@ -1,0 +1,15 @@
+---
+- name: "BGP DEPLOYMENT"
+  hosts: "holiday"
+  gather_facts: no
+  connection: local
+  tasks:
+    - name: "BUILD INTERFACE AND BGP CONFIGURATIONS"
+      template:
+        src: "templates/router.jinja2"
+        dest: "{{ inventory_hostname }}_config_deploy.cfg"
+
+    - name: "DEPLOY CONFIGURATIONS"
+      ios_config:
+        src: "{{ inventory_hostname }}_config_deploy.cfg"
+
