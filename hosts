@@ -1,0 +1,12 @@
+[all]
+ansible_user=ntc
+
+[holiday]
+csr1.holiday.ntc.cloud.tesuto.com
+csr2.holiday.ntc.cloud.tesuto.com
+csr3.holiday.ntc.cloud.tesuto.com
+
+[party]
+csr1.party.ntc.cloud.tesuto.com
+csr2.party.ntc.cloud.tesuto.com
+csr3.party.ntc.cloud.tesuto.com
