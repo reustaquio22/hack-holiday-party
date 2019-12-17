@@ -1,0 +1,16 @@
+bgp_as: 65100
+interfaces:
+    - name: Gi2
+      ip: 192.168.13.1
+      mask: 255.255.255.0
+    - name: Gi4
+      ip: 192.168.12.1
+      mask: 255.255.255.0
+bgp_peers:
+    - description: CSR2
+      ip: 192.168.12.2
+      asn: 65200
+    - description: CSR3
+      ip: 192.168.13.3
+      asn: 65300
+
